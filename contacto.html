@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ponte en contacto</h1>
+        
+        <form action="#" method="POST">
+            <label for="nombre">Nombre Completo *:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email *:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel">
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+                <option value="consulta">Consulta</option>
+                <option value="proyecto">Proyecto</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox" required> Acepto las políticas de privacidad
+            </label>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <section>
+            <h2>Información Directa</h2>
+            <table>
+                <tr>
+                    <th>Método</th>
+                    <th>Detalle</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>tucorreo@ejemplo.com</td>
+                    <td>24/7</td>
+                </tr>
+            </table>
+            <h3>Ubicación</h3>
+            <img src="mapa-placeholder.png" alt="Mapa de ubicación">
+        </section>
+    </main>
+</body>
+</html>
